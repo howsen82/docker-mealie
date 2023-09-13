@@ -1,5 +1,7 @@
 version: '3.9'
 
+# Enter the default email address which is 'changeme@email.com' and the default password is 'MyPassword'
+
 services:
   mealie:
     container_name: mealie
