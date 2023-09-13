@@ -9,4 +9,6 @@ services:
       - db_type=sqlite
     volumes:
       - /data/mealie/data:/app/data
+    ports:
+      - 9925:80
     restart: unless-stopped
