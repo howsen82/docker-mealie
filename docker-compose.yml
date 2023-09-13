@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  mealie:
+    container_name: mealie
+    image: hkotel/mealie:latest
+    environment:
+      - TZ=Asia/Kuching
+      - db_type=sqlite
+    volumes:
+      - /data/mealie/data:/app/data
+    restart: unless-stopped
